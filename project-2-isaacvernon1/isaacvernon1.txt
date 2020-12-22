@@ -1,0 +1,49 @@
+# History of Commands run -- Commented
+
+# Run in previous session to copy in yml file, edited through jupyterlab VM
+cp ~/w205/course-content/08-Querying-Data/docker-compose.yml ~/w205/project-2-isaacvernon1/
+
+# Start of Code for Final Project 2 Pipeline
+
+# cd into the project folder
+cd w205/project-2-isaacvernon1
+
+# Spin up the cluster
+docker-compose up -d
+
+# Check to make sure that the cluster was created properly
+docker-compose ps
+docker ps -a
+
+# Create Kafka topic "assessments"
+docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+
+# Publish "assessments" data to Kafka with kafkacat
+docker-compose exec mids bash -c "cat /w205/project-2-isaacvernon1/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+
+# Set up for running pyspark in Jupyter Notebook
+docker-compose exec spark bash
+
+# Run inside the container, exit takes us back to command line
+ln -s /w205 w205
+exit
+
+# Use to generate link for connecting to localhost notebook (use external IP address from VM session)
+docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+
+# Get out of pyspark after work is done in there (pyspark code in SparkCode.ipynb)
+CTRL C to exit 
+
+# Test to make sure write to HDFS went through (done in second command line)
+docker-compose exec cloudera hadoop fs -ls /tmp/
+
+# Take down cluster
+docker-compose down
+
+# Check to see if it was taken down properly
+docker-compose ps
+docker ps -a
+
+
+
+
