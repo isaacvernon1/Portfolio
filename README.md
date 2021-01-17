@@ -1,5 +1,6 @@
 # Portfolio
-A Short Portfolio of Some Relevant Work
+
+I am Isaac Vernon, a student of the fifth year Masters of Information and Data Science as the School of Information at UC Berkeley. This Repository includes a short portfolio of some of my relevant work.
 
 - Google BigQuery and SQL
   * project-1-isaacvernon1

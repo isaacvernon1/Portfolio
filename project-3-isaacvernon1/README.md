@@ -1,6 +1,8 @@
 # Project 3: Understanding User Behavior
 
-This README.md will start with a description of each of the files in the directory. The description of the project will follow afterwards.
+This README.md will start with he description of the project. A description of each of the files in the directory will follow afterwards.
+
+Set up an app server and create events through Apache Bench. Then, write a streaming process for those events which will publish to HDFS. Finally, make sure that they are available for analysis in Presto.
 
 - Project 3.ipynb
     * This is the overall summary of everything I did. Goes through each part of the project, providing highlights and commenting on work. This is where the business questions are answered.
@@ -9,4 +11,4 @@ This README.md will start with a description of each of the files in the directo
 - game_api.py
   * This is the code for the Web API that will run in Flask.
 
-Set up an app server and create events through Apache Bench. Then, write a streaming process for those events which will publish to HDFS. Finally, make sure that they are available for analysis in Presto.
+

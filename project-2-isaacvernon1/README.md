@@ -1,6 +1,8 @@
 # Project 2: Tracking User Activity
 
-This README.md will start with a description of each of the files in the directory. The description of the project will follow afterwards.
+This README.md will start with the description of the project. A description of each of the files in the directory will follow afterwards.
+
+Given a set of JSON assessment data (see file for specifics), read the data into Kafka and process it with spark. Then write the transoformed messages to HDFS. In addition, do some spark SQL to model possible work done through this pipeline.
 
 - Project_2_Report.ipynb
     * This is the overall summary of everything I did. Goes through each part of the project, providing highlights and commenting on work. This is where the business questions are answered (though code to get the answers is in SparkCode.ipynb).
@@ -15,5 +17,5 @@ This README.md will start with a description of each of the files in the directo
 - isaacvernon1.txt
     * Cleaned and commented version of the previous text file. Contains all the commands used in this project, recommended for use as the .txt file for the project.
 
-Given a set of JSON assessment data (see file for specifics), read the data into Kafka and process it with spark. Then write the transoformed messages to HDFS. In addition, do some spark SQL to model possible work done through this pipeline.
+
 
