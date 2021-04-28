@@ -8,3 +8,9 @@ I am Isaac Vernon, a student of the fifth year Masters of Information and Data S
   * project-2-isaacvernon1
 - Flask, Apache Bench, and Stream Processing
   * project-3-isaacvernon1
+- Pytorch, HuggingFace and NLP
+  * https://github.com/akihiczak/w266_final_project
+- Field Experiments, Qualtrics
+  * https://github.com/isaacvernon1/W241FinalProject
+- D3, HTML, Javascript
+  * https://www.ischool.berkeley.edu/projects/2021/chess-openings-visualization
