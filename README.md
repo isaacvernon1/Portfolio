@@ -14,3 +14,5 @@ I am Isaac Vernon, a student of the fifth year Masters of Information and Data S
   * https://github.com/isaacvernon1/W241FinalProject
 - D3, HTML, Javascript
   * https://www.ischool.berkeley.edu/projects/2021/chess-openings-visualization
+- Full Project Pipeline
+  * https://github.com/mbearw-berkeley/W210-Capstone
